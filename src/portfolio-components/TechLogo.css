@@ -1,0 +1,14 @@
+.tech-logo {
+    display: flex;
+    align-items: center;
+    max-width: 150px;
+    min-width: 100px;
+    padding:0.5rem;
+}
+.tech-logo img {
+    width: 100%;
+    height: auto;
+}
+.px-1-5 {
+    padding: 1.5rem;
+}

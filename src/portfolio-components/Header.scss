@@ -1,0 +1,17 @@
+header {
+  height: calc(100vh - 56px);
+  background-size: cover;
+  background-color: var(--theme-primary-color);
+  background-image: var(--theme-banner-url);
+  color: var(--theme-accent-text-color);
+
+  .banner-text {
+    z-index: 1;
+    position: fixed;
+    left: 50%;
+    top: calc(50% - 56px);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 95%;
+  }
+}

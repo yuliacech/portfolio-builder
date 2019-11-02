@@ -1,0 +1,97 @@
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+$theme-primary-color: #6F3D7F;
+$theme-primary-text-color: #494949;
+$theme-accent-text-color: #fff;
+$font-family: 'Open Sans', sans-serif;
+$banner-url: url("https://dl.dropboxusercontent.com/s/n24ja08qurjudjc/space_opt.jpg?dl=0");
+
+:root {
+  --theme-primary-color: #{$theme-primary-color};
+  --theme-primary-text-color: #{$theme-primary-text-color};
+  --theme-primary-text-color-rgb: #{hexToRGB($theme-primary-text-color)};
+  --theme-accent-text-color: #{$theme-accent-text-color};
+  --theme-accent-text-color-rgb: #{hexToRGB($theme-accent-text-color)};
+  --theme-font-family: #{$font-family};
+  --theme-banner-url: #{$banner-url};
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--theme-font-family);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--theme-primary-text-color);
+  background-color: #fff;
+  text-align: center;
+}
+
+
+mark {
+  background-color: transparent;
+  color: var(--theme-primary-color);
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+
+p {
+  font-size: 1.3rem;
+
+}
+
+section {
+  margin-top: 6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--theme-accent-text-color);
+  position: relative;
+  z-index: 2;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+a {
+  color: var(--theme-primary-color);
+  cursor: pointer;
+}
+
+a:hover {
+  font-weight: bold;
+}

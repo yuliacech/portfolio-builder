@@ -1,0 +1,23 @@
+.position-container {
+    text-align: left;
+}
+.position-container ul {
+    list-style: none;
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 0;
+
+}
+
+.position-container ul li {
+    position: relative;
+    padding-left: 2rem;
+}
+.position-container ul li:before {
+    content: '>_';
+    font-weight: bold;
+    position: absolute;
+    left:0;
+    color: var(--theme-primary-color);
+}
+

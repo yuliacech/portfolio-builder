@@ -1,8 +1,0 @@
-:root {
-  --theme-primary-color: blue;
-}
-
-h1 {
-  background: blue; /* Fallback */
-  background: var(--theme-primary-color);
-}

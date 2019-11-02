@@ -1,20 +1,34 @@
 import React from 'react';
 import Layout from "./Layout";
-import Portfolio from "./Portfolio";
+import Portfolio from "./portfolio-components/Portfolio";
 import config, {configToString} from "./config";
-import './App.css';
+import './App.scss';
+import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
 
 class App extends React.Component {
 
   render() {
     const portfolioConfig = config;
     const configString = configToString(portfolioConfig);
-    document.documentElement.style.setProperty('--theme-primary-color', portfolioConfig.palette.main);
-
     return (
-      <Layout content={[
-        <Portfolio config={portfolioConfig}/>
-        , <pre>{configString}</pre>]}/>
+      <Router>
+        <Switch>
+          <Route path="/fullscreen">
+            <Portfolio config={portfolioConfig}/>
+          </Route>
+          <Route path="/">
+            <Layout content={[
+              <Portfolio config={portfolioConfig}/>,
+              <>
+                <pre>{configString}</pre>
+                <Link to="/fullscreen">Fullscreen</Link>
+              </>
+            ]}/>
+          </Route>
+        </Switch>
+      </Router>
+
+
     );
   }
 }

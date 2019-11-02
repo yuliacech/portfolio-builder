@@ -1,0 +1,11 @@
+.tech-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:4rem;
+    margin-bottom: 4rem;
+}
+
+.tech-description h3:not(last-child) {
+    margin-bottom: 4rem;
+}
