@@ -3,13 +3,15 @@ import './Header.scss'
 
 class Header extends React.Component {
   render() {
-    const subtitles = this.props.config.subtitle.map((subtitle, index) => <h2 className="mb-2" key={index}>{subtitle}</h2>);
+    const titles = this.props.config.title.map((title, index, array) => <h1 key={index}>{title}</h1>);
+    const subtitles = this.props.config.subtitle.map((subtitle, index) => <h2 key={index}>{subtitle}</h2>);
     return (<header>
       <div className="banner-text">
-        <h1 className="mb-2"> {this.props.config.title} </h1>
+        {titles}
         {subtitles}
       </div>
     </header>);
   }
 }
+
 export default Header;

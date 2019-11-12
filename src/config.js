@@ -4,9 +4,9 @@ import {renderToStaticMarkup} from "react-dom/server";
 const config = {
     meta: {
       title: 'Yulia Čech (Ichin-Norbu), software developer and mentor',
-      description: 'Portfolio page of Yulia Čech'
+      description: 'Yulia Čech | Full stack / Angular web developer portfolio'
     },
-    title: <span>I am Yulia Čech,<br/>software developer and mentor</span>,
+    title: ['I am Yulia Čech', 'software developer and mentor'],
     subtitle: ['full stack expert specialized in Angular', 'creating web apps since 2014'],
     technologies: {
       logos: ['angular', 'rxjs', 'javascript', 'typescript', 'react', 'nodejs'],
@@ -46,8 +46,8 @@ const config = {
         description: [
           <span>1-on-1 video sessions with students
               in <b>Web Development</b> and <b>Engineering Immersion</b> programmes</span>,
-          <span><b>code review</b> on demo and capstone projects</span>,
-          <span>pair programming</span>
+          <span>delivering <b>code reviews</b> on demo and capstone projects</span>,
+          <span>leading pair programming sessions with students</span>
         ]
       },
       {

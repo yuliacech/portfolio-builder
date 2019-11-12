@@ -1,5 +1,5 @@
 .position-container {
-    text-align: left;
+    padding: 2rem;
 }
 .position-container ul {
     list-style: none;
@@ -10,11 +10,12 @@
 }
 
 .position-container ul li {
+    margin-top: 0.7rem;
     position: relative;
     padding-left: 2rem;
 }
 .position-container ul li:before {
-    content: '>_';
+    content: '>';
     font-weight: bold;
     position: absolute;
     left:0;
