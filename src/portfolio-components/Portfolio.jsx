@@ -10,6 +10,7 @@ import 'normalize.css';
 import './Portfolio.scss';
 import Technologies from "./Technologies";
 import Projects from './Projects';
+import Contact from "./Contact";
 
 class Portfolio extends React.Component {
   render() {
@@ -22,6 +23,7 @@ class Portfolio extends React.Component {
         <Technologies technologies={this.props.config.technologies}/>
         <Experience experience={this.props.config.experience}/>
         <Projects projects={this.props.config.projects}/>
+        <Contact contact={this.props.config.contact}/>
       </>
     );
   }

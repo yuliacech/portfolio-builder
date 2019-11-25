@@ -11,6 +11,7 @@ $banner-url: url("https://dl.dropboxusercontent.com/s/n24ja08qurjudjc/space_opt.
 
 :root {
   --theme-primary-color: #{$theme-primary-color};
+  --theme-primary-color-rgb: #{hexToRGB($theme-primary-color)};
   --theme-primary-dark-color: #{$theme-primary-dark-color};
   --theme-accent-text-color: #{$theme-accent-text-color};
   --theme-accent-text-color-rgb: #{hexToRGB($theme-accent-text-color)};
@@ -91,8 +92,17 @@ section {
 a {
   color: var(--theme-primary-color);
   cursor: pointer;
+
+  &:hover {
+    font-weight: bold;
+  }
 }
 
-a:hover {
-  font-weight: bold;
+.btn {
+  border: 1px solid var(--theme-primary-color);
+  border-radius: 2px;
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(var(--theme-primary-color-rgb), 0.5);
+  }
 }

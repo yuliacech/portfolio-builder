@@ -117,6 +117,9 @@ const config = {
         stack: ['melonJS', 'PHP']
       }
     ],
+    contact: {
+      subtitle: <span>If you need help in building a modern, responsive, dynamic application, contact me via <a href="mailto:info@yuliacech.com">info@yuliacech.com</a> or using the form below.</span>
+    },
     palette:
       {
         '--theme-primary-color': '#6F3D7F',

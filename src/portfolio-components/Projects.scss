@@ -13,13 +13,16 @@
 
   .project-stack-container {
     margin: 2rem 0;
+
     span:after {
       content: ' \2726 ';
       padding-left: 0.5rem;
     }
+
     span {
       margin: 0 0.5rem;
     }
+
     span:first-child:before {
       content: ' \2726 ';
       padding-right: 0.5rem;
@@ -34,10 +37,10 @@
   }
 
   .project-link {
-    border: 1px solid var(--theme-primary-color);
     text-decoration: none;
     padding: 0.5rem 1rem;
-    max-width: 200px;
+    width: 250px;
+    max-width: 250px;
     margin: 0.5rem;
     flex-grow: 1;
   }
