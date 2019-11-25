@@ -7,7 +7,7 @@ import php from '../logos/php.svg';
 import postgres from '../logos/postgres.gif';
 import rxjs from '../logos/rxjs.svg';
 import react from '../logos/react.svg';
-import './TechLogo.css';
+import './TechLogo.scss';
 
 export class TechLogo extends React.Component {
   render() {

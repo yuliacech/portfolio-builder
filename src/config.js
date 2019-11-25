@@ -93,6 +93,30 @@ const config = {
         location: 'Germany'
       }
     ],
+    projects: [
+      {
+        title: 'Accommodations reviews',
+        description: 'This accommodation review system is built for mid to long-term rentals where users can leave their feedback along with pictures, information about the price, location and duration of their stay. Make sure to log in and try it out!',
+        demo: 'http://bruship.yuliacech.com/',
+        screenshot: 'https://dl.dropboxusercontent.com/s/bxxopqbs3hsiqzg/bruship.png?dl=0',
+        frontend: 'https://github.com/yuliacech/bruship',
+        backend: 'https://github.com/yuliacech/bruship-server',
+        stack: ['MongoDB', 'Express', 'Angular', 'NodeJS', 'Auth0']
+      }, {
+        title: 'WordPress Blog',
+        description: 'This WordPress blog gives information about investment, trading options and stock market in general. This is a self-hosted WordPress installation with an individualized Shadower theme (color palette, configuration of displayed elements, custom layout).',
+        demo: 'http://premium-flow.com/',
+        screenshot: 'https://dl.dropboxusercontent.com/s/8y7z5lflz7bhx0y/premium_flow.png?dl=0',
+        stack: ['WordPress', 'Bootstrap', 'SCSS']
+      }, {
+        title: '2D platform game',
+        description: <span>An online game featuring a pink alien figure who needs to collect letters and a key to get to the next level while avoiding insects. The game was built for my 2014 Master thesis and uses HTML5 <code>canvas</code> element and a JS game engine framework melonJS.</span>,
+        demo: 'http://compound-game.rf.gd/',
+        code: 'https://github.com/yuliacech/compound-game',
+        screenshot: 'https://dl.dropboxusercontent.com/s/hgmiarwhef8140h/compound_game.png?dl=0',
+        stack: ['melonJS', 'PHP']
+      }
+    ],
     palette:
       {
         '--theme-primary-color': '#6F3D7F',

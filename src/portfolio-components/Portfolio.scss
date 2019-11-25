@@ -4,7 +4,6 @@
 
 $theme-primary-color: #6F3D7F;
 $theme-primary-dark-color: darken($theme-primary-color, 10%);
-$theme-primary-text-color: #494949;
 $theme-accent-color: #3d6e7f;
 $theme-accent-text-color: #fff;
 $font-family: 'Open Sans', sans-serif;
@@ -13,8 +12,6 @@ $banner-url: url("https://dl.dropboxusercontent.com/s/n24ja08qurjudjc/space_opt.
 :root {
   --theme-primary-color: #{$theme-primary-color};
   --theme-primary-dark-color: #{$theme-primary-dark-color};
-  --theme-primary-text-color: #{$theme-primary-text-color};
-  --theme-primary-text-color-rgb: #{hexToRGB($theme-primary-text-color)};
   --theme-accent-text-color: #{$theme-accent-text-color};
   --theme-accent-text-color-rgb: #{hexToRGB($theme-accent-text-color)};
   --theme-font-family: #{$font-family};
@@ -31,7 +28,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--theme-primary-text-color);
+  color: var(--theme-primary-color);
   background-color: #fff;
   text-align: center;
 }
@@ -67,6 +64,7 @@ h4 {
 
 p {
   font-size: 1.3rem;
+  margin: 1rem 0;
 
 }
 
@@ -74,7 +72,7 @@ section {
   margin-top: 6rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  max-width: 1200px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--theme-accent-text-color);

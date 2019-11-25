@@ -1,6 +1,6 @@
 import React from "react";
 import TechLogo from "./TechLogo";
-import './Technologies.css';
+import './Technologies.scss';
 
 class Technologies extends React.Component {
 
