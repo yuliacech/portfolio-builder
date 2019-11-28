@@ -7,7 +7,7 @@ const config = {
       description: 'Yulia Čech | Full stack / Angular web developer portfolio'
     },
     title: ['I am Yulia Čech', 'software developer and mentor'],
-    subtitle: ['full stack expert specialized in Angular', 'creating web apps since 2014'],
+    subtitle: ['Angular full stack expert', 'creating web apps since 2014'],
     technologies: {
       logos: ['angular', 'rxjs', 'javascript', 'typescript', 'react', 'nodejs'],
       description:
@@ -118,7 +118,14 @@ const config = {
       }
     ],
     contact: {
-      subtitle: <span>If you need help in building a modern, responsive, dynamic application, contact me via <a href="mailto:info@yuliacech.com">info@yuliacech.com</a> or using the form below.</span>
+      subtitle: <span>If you need help in building a modern, responsive, dynamic application, contact me via <a
+        href="mailto:info@yuliacech.com">info@yuliacech.com</a> or using the form below.</span>
+    },
+    about: {
+      image: 'https://dl.dropboxusercontent.com/s/qrvfzpxb4uuforz/profile_pic.jpg?dl=0',
+      text: ['As a developer, I believe in writing clean, maintainable and testable code to make applications robust and bugs free. I enjoy working with web technologies and create useful programs for people from all over the world to use. I hope to help others with my skills by building applications and mentoring aspiring developers.',
+      'Outside of coding, my hobbies include reading and watching science fiction and learning foreign languages. I am definitely a cat person and I dream to become an astronaut one day.',
+      'Originally from Russia, I have been living in Europe for over 8 years. Currently, I\'m located in Germany.']
     },
     palette:
       {

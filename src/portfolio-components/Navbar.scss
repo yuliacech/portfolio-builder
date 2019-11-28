@@ -10,7 +10,7 @@
     margin: 0 auto;
     padding: 0;
     list-style: none;
-    display: flex;
+    display: none;
 
     .nav-item {
 
@@ -35,6 +35,12 @@
         background-color: rgba(0, 0, 0, 0.2);
       }
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar .navbar-nav {
+    display: flex;
   }
 }
 

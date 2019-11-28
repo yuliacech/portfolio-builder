@@ -1,0 +1,34 @@
+.about-container {
+  background-size: cover;
+  background-color: var(--theme-primary-color);
+  background-image: var(--theme-banner-url);
+  color: var(--theme-accent-text-color);
+
+  img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-container {
+    .flex-container {
+      align-items: center;
+      flex-direction: row-reverse;
+      display: flex;
+    }
+    img {
+      margin-left: 1rem;
+    }
+  }
+}
+
+
+

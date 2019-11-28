@@ -11,6 +11,7 @@ import './Portfolio.scss';
 import Technologies from "./Technologies";
 import Projects from './Projects';
 import Contact from "./Contact";
+import About from "./About";
 
 class Portfolio extends React.Component {
   render() {
@@ -24,6 +25,7 @@ class Portfolio extends React.Component {
         <Experience experience={this.props.config.experience}/>
         <Projects projects={this.props.config.projects}/>
         <Contact contact={this.props.config.contact}/>
+        <About about={this.props.config.about}/>
       </>
     );
   }

@@ -6,7 +6,7 @@ class Navbar extends React.Component {
   render() {
     const links = [];
     const ids = [];
-    ['technologies', 'experience', 'projects', 'contact'].forEach((linkName, index) => {
+    ['technologies', 'experience', 'projects', 'contact', 'about'].forEach((linkName, index) => {
       if (this.props.config.hasOwnProperty(linkName)) {
         links.push(getLinkHtml(linkName, index));
         ids.push(linkName);
