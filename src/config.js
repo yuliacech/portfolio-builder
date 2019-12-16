@@ -2,7 +2,8 @@ import React from "react";
 import {renderToStaticMarkup} from "react-dom/server";
 
 const config = {
-    name: "Yulia Čech",
+    name: 'Yulia Čech',
+    email: 'info@yuliacech.com',
     meta: {
       title: 'Yulia Čech (Ichin-Norbu), software developer and mentor',
       description: 'Yulia Čech | Full stack / Angular web developer portfolio'

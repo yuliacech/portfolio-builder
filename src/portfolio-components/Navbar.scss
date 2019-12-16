@@ -4,13 +4,15 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  overflow: auto;
+  white-space: nowrap;
 
   .navbar-nav {
     max-width: 1920px;
     margin: 0 auto;
     padding: 0;
     list-style: none;
-    display: none;
+    display: flex;
 
     .nav-item {
 
@@ -38,10 +40,5 @@
   }
 }
 
-@media (min-width: 768px) {
-  .navbar .navbar-nav {
-    display: flex;
-  }
-}
 
 

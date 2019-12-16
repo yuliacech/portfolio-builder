@@ -7,7 +7,7 @@ class Contact extends React.Component {
     return <section id="contact" className="contact-container">
       <h1 className="mb-4">Contact</h1>
       <p>{this.props.contact.subtitle}</p>
-      <form action="https://formspree.io/info@yuliacech.com" method="POST">
+      <form action={'https://formspree.io/' + this.props.email} method="POST">
         <div className="form-inline">
           <label htmlFor="inputEmail">Email</label>
           <input className="" id="inputEmail" name="email" placeholder="Your email"
