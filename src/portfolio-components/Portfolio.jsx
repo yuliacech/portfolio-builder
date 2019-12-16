@@ -25,7 +25,7 @@ class Portfolio extends React.Component {
         <Experience experience={this.props.config.experience}/>
         <Projects projects={this.props.config.projects}/>
         <Contact contact={this.props.config.contact}/>
-        <About about={this.props.config.about}/>
+        <About bio={this.props.config.bio} image={this.props.config.image} name={this.props.config.name}/>
       </>
     );
   }

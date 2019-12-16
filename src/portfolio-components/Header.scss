@@ -2,7 +2,8 @@ header {
   height: calc(100vh - 56px);
   background-size: cover;
   background-color: var(--theme-primary-color);
-  background-image: var(--theme-banner-url);
+  background-position: center;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), var(--theme-banner-url);
   color: var(--theme-accent-text-color);
 
   .banner-text {
@@ -11,25 +12,41 @@ header {
     left: 50%;
     top: calc(50% - 28px);
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    max-width: 600px;
     width: 95%;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
-    h1 {
-      font-size: 2rem;
+    h1.main-title {
+      font-size: 2.5rem;
+      font-weight: 900;
+      text-transform: uppercase;
     }
-    h2 {
-      font-size: 1.5rem;
+
+    h1.greeting, h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      font-style: italic;
     }
+
     h1, h2:not(:last-child) {
       margin-bottom: 1rem;
     }
-    @media (min-width: 768px) {
-      h1 {
-        font-size: 2.5rem;
-      }
-      h2 {
-        font-size: 2rem;
-      }
+
+  }
+}
+
+@media (min-width: 768px) {
+  header .banner-text {
+    h1.main-title {
+      font-size: 3rem;
+    }
+
+    h1.greeting, h2 {
+      font-size: 1.5rem;
     }
   }
+
 }

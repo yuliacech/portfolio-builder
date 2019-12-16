@@ -12,7 +12,7 @@ class Position extends React.Component {
       description = <ul>{listItems}</ul>;
     }
     const position = isCurrent ?
-      <mark>{this.props.experience.position}</mark> : this.props.experience.position;
+      <b>{this.props.experience.position}</b> : this.props.experience.position;
 
     const positionTitle =
       <div>

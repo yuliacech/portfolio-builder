@@ -2,19 +2,21 @@ import React from "react";
 import {renderToStaticMarkup} from "react-dom/server";
 
 const config = {
+    name: "Yulia Čech",
     meta: {
       title: 'Yulia Čech (Ichin-Norbu), software developer and mentor',
       description: 'Yulia Čech | Full stack / Angular web developer portfolio'
     },
-    title: ['I am Yulia Čech', 'software developer and mentor'],
-    subtitle: ['Angular full stack expert', 'creating web apps since 2014'],
+    greeting: 'Hi, I am Yulia Čech',
+    mainTitle: 'software developer and mentor',
+    subtitles: ['Angular full stack expert', 'creating web apps since 2014'],
     technologies: {
       logos: ['angular', 'rxjs', 'javascript', 'typescript', 'react', 'nodejs'],
       description:
         [
-          <span>I work intensively with <mark>Angular</mark> and <mark>RxJS</mark>, <mark>TypeScript/JavaScript</mark>, <mark>HTML/SCSS</mark> and
+          <span>I work intensively with <b>Angular</b> and <b>RxJS</b>, <b>TypeScript/JavaScript</b>, <b>HTML/SCSS</b> and
             implement highly dynamic, interactive applications. <br/>Other technologies,
-            like <mark>React</mark>, <mark>NodeJS</mark>, <mark>PHP</mark>, <mark>Java</mark> and <mark>PostgreSQL</mark> are
+            like <b>React</b>, <b>NodeJS</b>, <b>PHP</b>, <b>Java</b> and <b>PostgreSQL</b> are
             part of my solid skills as well.</span>]
     }
     ,
@@ -121,12 +123,10 @@ const config = {
       subtitle: <span>If you need help in building a modern, responsive, dynamic application, contact me via <a
         href="mailto:info@yuliacech.com">info@yuliacech.com</a> or using the form below.</span>
     },
-    about: {
-      image: 'https://dl.dropboxusercontent.com/s/qrvfzpxb4uuforz/profile_pic.jpg?dl=0',
-      text: ['As a developer, I believe in writing clean, maintainable and testable code to make applications robust and bugs free. I enjoy working with web technologies and create useful programs for people from all over the world to use. I hope to help others with my skills by building applications and mentoring aspiring developers.',
+    image: 'https://dl.dropboxusercontent.com/s/qrvfzpxb4uuforz/profile_pic.jpg?dl=0',
+    bio: ['As a developer, I believe in writing clean, maintainable and testable code to make applications robust and bugs free. I enjoy working with web technologies and create useful programs for people from all over the world to use. I hope to help others with my skills by building applications and mentoring aspiring developers.',
       'Outside of coding, my hobbies include reading and watching science fiction and learning foreign languages. I am definitely a cat person and I dream to become an astronaut one day.',
-      'Originally from Russia, I have been living in Europe for over 8 years. Currently, I\'m located in Germany.']
-    },
+      'Originally from Russia, I have been living in Europe for over 8 years. Currently, I\'m located in Germany.'],
     palette:
       {
         '--theme-primary-color': '#6F3D7F',
@@ -138,7 +138,7 @@ const config = {
     ,
     font: {
       name: '\'Open Sans\', sans-serif',
-      link: 'https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap'
+      link: 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap'
     }
   }
 ;

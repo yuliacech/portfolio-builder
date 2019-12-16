@@ -4,6 +4,7 @@
 
 $theme-primary-color: #6F3D7F;
 $theme-primary-dark-color: darken($theme-primary-color, 10%);
+$theme-primary-text-color: #494949;
 $theme-accent-color: #3d6e7f;
 $theme-accent-text-color: #fff;
 $font-family: 'Open Sans', sans-serif;
@@ -13,6 +14,9 @@ $banner-url: url("https://dl.dropboxusercontent.com/s/n24ja08qurjudjc/space_opt.
   --theme-primary-color: #{$theme-primary-color};
   --theme-primary-color-rgb: #{hexToRGB($theme-primary-color)};
   --theme-primary-dark-color: #{$theme-primary-dark-color};
+  --theme-primary-dark-color-rgb: #{$theme-primary-dark-color};
+  --theme-primary-text-color: #{$theme-primary-text-color};
+  --theme-primary-text-color-rgb: #{$theme-primary-text-color};
   --theme-accent-text-color: #{$theme-accent-text-color};
   --theme-accent-text-color-rgb: #{hexToRGB($theme-accent-text-color)};
   --theme-font-family: #{$font-family};
@@ -29,17 +33,11 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--theme-primary-color);
-  background-color: #fff;
+  color: var(--theme-primary-text-color);
+  background-color: #ffffff;
   text-align: center;
 }
 
-
-mark {
-  background-color: transparent;
-  color: var(--theme-primary-color);
-  font-weight: bold;
-}
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -70,13 +68,17 @@ p {
 }
 
 section {
-  padding: 3rem 1rem;
-  max-width: 1440px;
+  padding: 5rem 1rem;
+  max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--theme-accent-text-color);
+  background-color: #ffffff;
   position: relative;
   z-index: 2;
+
+  &:first-child, &:last-child {
+
+  }
   &:nth-child(even) {
     background-color: #fbfbfc;
   }
@@ -93,17 +95,19 @@ section {
 a {
   color: var(--theme-primary-color);
   cursor: pointer;
-
-  &:hover {
-    font-weight: bold;
-  }
 }
 
 .btn {
+  cursor: pointer;
   border: 1px solid var(--theme-primary-color);
   border-radius: 2px;
+
+  &:focus, &:hover {
+    font-weight: bold;
+    box-shadow: 0 0 0 .2rem rgba(var(--theme-primary-color-rgb), 0.5);
+  }
+
   &:focus {
     outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(var(--theme-primary-color-rgb), 0.5);
   }
 }
