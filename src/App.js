@@ -11,6 +11,7 @@ class App extends React.Component {
     const portfolioConfig = config;
     const configString = configToString(portfolioConfig);
     return (
+      /*
       <Router>
         <Switch>
           <Route path="/fullscreen">
@@ -27,8 +28,8 @@ class App extends React.Component {
           </Route>
         </Switch>
       </Router>
-
-
+      */
+      <Portfolio config={portfolioConfig}/>
     );
   }
 }
