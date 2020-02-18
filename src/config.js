@@ -124,7 +124,7 @@ const config = {
       subtitle: <span>If you need help in building a modern, responsive, dynamic application, contact me via <a
         href="mailto:info@yuliacech.com">info@yuliacech.com</a> or using the form below.</span>
     },
-    image: 'https://dl.dropboxusercontent.com/s/qrvfzpxb4uuforz/profile_pic.jpg?dl=0',
+    image: 'https://dl.dropboxusercontent.com/s/yqc2mu1tliuufx6/profile%20photo%20Yulia%20Cech.jpg?dl=0',
     bio: ['As a developer, I believe in writing clean code and following SOLID principles. I enjoy working with web technologies and create useful programs for people from all over the world. By mentoring aspiring developers, I try to give back to the community and make it more diverse.',
       'Outside of coding, my hobbies include science fiction, learning foreign languages and geocaching. Originally from Russia, I have been living in Europe for over 8 years. Currently, I\'m located in Germany.'],
     palette:
