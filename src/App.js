@@ -1,15 +1,12 @@
 import React from 'react';
-import Layout from "./Layout";
 import Portfolio from "./portfolio-components/Portfolio";
-import config, {configToString} from "./config";
+import config from "./config";
 import './App.scss';
-import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
 
 class App extends React.Component {
 
   render() {
     const portfolioConfig = config;
-    const configString = configToString(portfolioConfig);
     return (
       /*
       <Router>
