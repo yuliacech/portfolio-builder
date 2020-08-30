@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "gatsby": "^2.23.20",
+    "gatsby-plugin-canonical-urls": "^2.3.9",
+    "gatsby-plugin-s3": "^0.3.3",
     "gatsby-plugin-sass": "^2.3.10",
     "gulp": "^4.0.2",
     "gulp-awspublish": "^4.0.1",
@@ -21,12 +23,9 @@
     "react-scrollspy": "^3.4.0"
   },
   "scripts": {
-    "gatsby-develop": "gatsby develop",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "aws-deploy": "gulp aws-deploy"
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "deploy": "gatsby-plugin-s3 deploy --yes && aws cloudfront create-invalidation --distribution-id E1WVACBK45GZ13 --paths \"/*\""
   },
   "eslintConfig": {
     "extends": "react-app"
