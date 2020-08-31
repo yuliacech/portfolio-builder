@@ -2,7 +2,7 @@ const siteAddress = new URL("https://yuliacech.com");
 
 module.exports = {
   plugins: [
-    `gatsby-plugin-sass`,
+    `gatsby-plugin-sass`, `gatsby-plugin-favicon`,
     {
       resolve: `gatsby-plugin-s3`,
       options: {
